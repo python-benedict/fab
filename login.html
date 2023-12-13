@@ -20,22 +20,22 @@
                 </div>
 
                 <div class="login__forms">
-                    <form action="" class="login__registre" id="login-in">
+                    <form action="" class="login__registre" id="loginForm">
                         <h1 class="login__title">Sign In</h1>
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
+                            <input type="text" id="username" placeholder="Username" class="login__input">
                         </div>
     
                         <div class="login__box">
                             <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
+                            <input type="password" id="pass" placeholder="Password" class="login__input">
                         </div>
 
-                        <a href="#" class="login__forgot">Forgot password?</a>
-
-                        <a href="#" class="login__button">Sign In</a>
+                        <!-- <a href="#" class="login__forgot">Forgot password?</a> -->
+                            <button style="padding: 10px 40px; margin-top:20px; font-weight:bold; margin-bottom:30px;">sign in</button>
+                        <!-- <a href="#" class="login__button">Sign In</a> -->
 
                         <div>
                             <span class="login__account">Don't have an Account ?</span>
@@ -77,6 +77,29 @@
                 </div>
             </div>
         </div>
+        <script>
+
+            
+
+                let loginForm = document.getElementById("loginForm");
+        
+                loginForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+        
+                let username = document.getElementById("username");
+                let password = document.getElementById("pass");
+        
+                if (username.value == "Maryhammond" && password.value == 'Godisking' ) {
+                    window.location.href = "index.html";
+                } else {
+                    alert('Wrong username or password!')
+                    window.location.href = "main.html";
+                }
+                });
+        
+              
+
+      </script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
