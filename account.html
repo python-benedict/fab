@@ -29,22 +29,49 @@
 <link href="//cdn.datatables.net/plug-ins/1.10.19/integration/font-awesome/dataTables.fontAwesome.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet"  type="text/css" href="https://gensuiteqa.genalphacatalog.com/gensuite/css/ps/orderhistory.css?version=0707050300507050503" />
 
+<header id="navbar">
+    <nav class="navbar-container container">
+      <a href="/" class="home-link">
+        <div class="navbar-logo"></div>
+        Website Name
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="/about">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Careers</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 <div class="table-responsive pb-5">
 				<table id="tbOrderHistory" class="table border ps-table w-100 mb-3">
 					<thead>
 						<tr>
-							<th class="font-weight-bold py-2 border-0">Document Type</th>
-							<th class="font-weight-bold py-2 border-0 quantity">Number</th>
-							<th class="font-weight-bold py-2 border-0 ">Created</th>
-							<th class="font-weight-bold py-2 border-0 ">Expiration</th>
+							<th class="font-weight-bold py-2 border-0">#NO.</th>
+							<th class="font-weight-bold py-2 border-0 quantity">DESCRIPTION</th>
+							<th class="font-weight-bold py-2 border-0 ">BALANCE</th>
+							<!-- <th class="font-weight-bold py-2 border-0 ">Expiration</th>
 							<th class="font-weight-bold py-2 border-0 ">PO</th>
 							<th class="font-weight-bold py-2 border-0 ">Customer</th>
 							<th class="font-weight-bold py-2 border-0 ">Total</th>
 							<th class="font-weight-bold py-2 border-0 ">Status</th>
-							<th class="font-weight-bold py-2 border-0 ">Action</th>
+							<th class="font-weight-bold py-2 border-0 ">Action</th> -->
 						</tr>
 					</thead>
 					<tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>Wire transfer to account ending xx382 for ₵23,000,000.0</td>
+                            <td>₵1,000,000.0</td>
+                        </tr>
 					</tbody>
 				</table>
 			</div>
